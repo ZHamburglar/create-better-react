@@ -75,7 +75,6 @@ module.exports = {
       Examples: 'app/components/Examples.jsx',
 			Login: 'app/components/Login.jsx',
 			Gameroom: 'app/components/Gameroom.jsx',
-			Leaderboard: 'app/components/Leaderboard.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
       applicationStyles: 'app/styles/app.scss',
 			actions: 'app/actions/actions.jsx',

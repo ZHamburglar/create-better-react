@@ -6,7 +6,6 @@ var LogoLeft = require('LogoLeft');
 var LogoRight = require('LogoRight');
 var axios = require('axios');
 
-import TriviaComponent from './GameRoom/TriviaComponent'
 import '../../index.css'
 import Ken from './Ken'
 import Ryu from './Ryu'
@@ -56,7 +55,7 @@ export var Gameroom = React.createClass({
             <LogoLeft/>
           </div>
           <div className="columns medium-6 large-4 small-centered" onClick={this.handleClick}>
-            <TriviaComponent/>
+            no worky
           </div>
           <div className="columns medium-3 medium-centered">
             <LogoRight/>
