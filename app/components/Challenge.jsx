@@ -27,13 +27,14 @@ export var Challenge = React.createClass({
         <div className="page-actions"></div>
         <div className="row" id="logorow">
           <div className="columns medium-3 large-2 small-centered">
-            <LogoLeft/>
+            Side 1
           </div>
           <div className="columns medium-6  large-8 small-centered">
-            <TwilioSMS/>
+            <p>This is the second page!</p>
+            <p>Look at you navigating!</p>
           </div>
           <div className="columns medium-3 large-2 small-centered">
-            <LogoRight/>
+            Side 2
           </div>
         </div>
         <Footer />
