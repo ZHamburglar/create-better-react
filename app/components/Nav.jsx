@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 /*how the routes are defined, using inde link show the main link selected only when it is required*/
 var {Link, IndexLink} = require('react-router');
 

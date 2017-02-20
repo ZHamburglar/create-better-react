@@ -1,25 +1,7 @@
 import React from 'react';
-var Nav = require('Nav');
-var Footer = require('Footer');
-var LogoLeft = require('LogoLeft');
-var LogoRight = require('LogoRight');
-var Clock = require('Clock');
-var CountdownForm = require('CountdownForm');
-var Countdown = require('Countdown');
-var Controls = require('Controls');
 
-import * as Redux from 'react-redux';
-import * as actions from 'actions';
-import router from 'app/router/';
-import ChatRoom from './ChatBox/ChatRoom';
 
-export var Main = React.createClass({
-  onLogout(e) {
-    var {dispatch} = this.props;
-    e.preventDefault();
-
-    dispatch(actions.startLogout());
-  },
+class Main extends Component {
 
   render: function() {
     return (
@@ -41,7 +23,7 @@ export var Main = React.createClass({
       </div>
     );
   }
-});
+};
 
 // module.exports = Main;
-export default Redux.connect()(Main);
+export default Main;
