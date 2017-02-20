@@ -1,8 +1,6 @@
 import React from 'react';
 var Nav = require('Nav');
 var Footer = require('Footer');
-var LogoLeft = require('LogoLeft');
-var LogoRight = require('LogoRight');
 var Clock = require('Clock');
 var CountdownForm = require('CountdownForm');
 var Countdown = require('Countdown');
@@ -28,13 +26,13 @@ export var Main = React.createClass({
         <div className="page-actions"></div>
         <div className="row" id="logorow">
           <div className="columns medium-3 large-2 small-centered">
-            <LogoLeft/>
+            Left Side
           </div>
           <div className="columns medium-6  large-8 small-centered">
-            <ChatRoom></ChatRoom>
+            Welcome to Your React App
           </div>
           <div className="columns medium-3 large-2 small-centered">
-            <LogoRight/>
+            Right Side
           </div>
         </div>
         <Footer/>
