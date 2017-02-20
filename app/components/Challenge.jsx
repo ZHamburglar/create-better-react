@@ -1,19 +1,18 @@
-import React from 'react';
+var React = require('react');
+var {Link} = require('react-router');
 var Nav = require('Nav');
 var Footer = require('Footer');
 var LogoLeft = require('LogoLeft');
 var LogoRight = require('LogoRight');
-var Clock = require('Clock');
-var CountdownForm = require('CountdownForm');
-var Countdown = require('Countdown');
-var Controls = require('Controls');
 
+import ChallengeInput from './ChallengeInput';
 import * as Redux from 'react-redux';
 import * as actions from 'actions';
 import router from 'app/router/';
-import ChatRoom from './ChatBox/ChatRoom';
+import TwilioSMS from './Challenge/TwilioSMS.js'
 
-export var Main = React.createClass({
+export var Challenge = React.createClass({
+
   onLogout(e) {
     var {dispatch} = this.props;
     e.preventDefault();
@@ -21,9 +20,9 @@ export var Main = React.createClass({
     dispatch(actions.startLogout());
   },
 
-  render: function() {
+  render() {
     return (
-      <div className="font main">
+      <div className="font-main">
         <Nav/>
         <div className="page-actions"></div>
         <div className="row" id="logorow">
@@ -31,17 +30,17 @@ export var Main = React.createClass({
             <LogoLeft/>
           </div>
           <div className="columns medium-6  large-8 small-centered">
-            <ChatRoom></ChatRoom>
+            <TwilioSMS/>
           </div>
           <div className="columns medium-3 large-2 small-centered">
             <LogoRight/>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }
 });
 
-// module.exports = Main;
-export default Redux.connect()(Main);
+// module.exports = Challenge;
+export default Redux.connect()(Challenge);

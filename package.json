@@ -1,14 +1,14 @@
 {
-  "name": "create-better-react",
-  "version": 0.0.1,
-  "description": "A better react app that scaffolds in an easier method than Facebook's and makes hosting easier.",
+  "name": "TriviaFight",
+  "version": "1.0.0",
+  "description": "A trivia challenge game",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test karma start",
     "build": "webpack",
     "start": "npm run build && node server.js"
   },
-  "author": "Kollin Brandenburg, Kyle Crichton",
+  "author": "Kollin Brandenburg, Luke Popwell",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.0.3",
