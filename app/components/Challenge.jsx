@@ -1,19 +1,13 @@
-var React = require('react');
+import React, { Component } from 'react';
 var {Link} = require('react-router');
-var Nav = require('Nav');
-var Footer = require('Footer');
+import Nav from 'Nav';
+import Footer from 'Footer';
 import * as Redux from 'react-redux';
 import * as actions from 'actions';
 import router from 'app/router/';
 
-export var Challenge = React.createClass({
+class Challenge extends Component{
 
-  onLogout(e) {
-    var {dispatch} = this.props;
-    e.preventDefault();
-
-    dispatch(actions.startLogout());
-  },
 
   render() {
     return (
@@ -34,9 +28,9 @@ export var Challenge = React.createClass({
         </div>
         <Footer />
       </div>
-    );
+    )
   }
-});
+};
 
 // module.exports = Challenge;
-export default Redux.connect()(Challenge);
+export default Challenge;
