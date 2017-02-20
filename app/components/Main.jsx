@@ -1,25 +1,18 @@
-import React from 'react';
-var Nav = require('Nav');
-var Footer = require('Footer');
-var Clock = require('Clock');
-var CountdownForm = require('CountdownForm');
-var Countdown = require('Countdown');
-var Controls = require('Controls');
+import React, { Component } from 'react';
+import Nav from 'Nav';
+import Footer from 'Footer';
 
 import * as Redux from 'react-redux';
 import * as actions from 'actions';
 import router from 'app/router/';
 import ChatRoom from './ChatBox/ChatRoom';
 
-export var Main = React.createClass({
-  onLogout(e) {
-    var {dispatch} = this.props;
-    e.preventDefault();
+class Main extends Component {
 
-    dispatch(actions.startLogout());
-  },
 
-  render: function() {
+  render(){
+
+
     return (
       <div className="font main">
         <Nav/>
@@ -37,9 +30,8 @@ export var Main = React.createClass({
         </div>
         <Footer/>
       </div>
-    );
+    )
   }
-});
+};
 
-// module.exports = Main;
-export default Redux.connect()(Main);
+export default Main;
