@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test karma start",
-    "build": "webpack",
-    "start": "npm run build && node server.js"
+    "build": "webpack -w",
+    "start": "npm run build && node server.js",
+    "booty": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "Kollin Brandenburg, Luke Popwell",
   "license": "MIT",

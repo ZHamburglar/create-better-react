@@ -9,15 +9,6 @@ const webpackconfig = require('./webpack.config.js');
 const bodyParser = require('body-parser');
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const app = express();
-// Routes
-
-
-
-
-
-var userController = require('./server/controllers/user-controller.js');
-
-
 
 // CHECK IF THE TRAFFIC IS ON HTTPS or convert to HTTP
 app.use(function(req, res, next){
@@ -27,7 +18,6 @@ app.use(function(req, res, next){
     next();
   }
 });
-
 
 // server to use , allows you to use functionality
 app.use(express.static('public'));
@@ -42,10 +32,7 @@ app.use(bodyParser.json());
 app.use('/app', express.static(__dirname + '/app'));
 app.get('/', function(req, res, next){
   res.sendFile(__dirname + "/index.html");
-
 });
-
-
 /*
 *   @summary For whatever the URL is just go to index
 */
