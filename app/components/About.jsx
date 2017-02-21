@@ -18,7 +18,7 @@ class About extends Component{
             Left Side
           </div>
           <div className="columns medium-6  large-8 small-centered">
-            <p>This is the second page!</p>
+            <h3>This is the second page!</h3>
             <p>Look at you navigating!</p>
           </div>
           <div className="columns medium-3 large-2 small-centered">
