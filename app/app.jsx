@@ -4,7 +4,7 @@ var {Provider} = require('react-redux');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 var Main = require('Main');
-var Challenge = require('Challenge');
+var About = require('About');
 
 
 var actions = require('actions');

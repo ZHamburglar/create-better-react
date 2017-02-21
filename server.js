@@ -1,20 +1,16 @@
 const express = require('express');
 //create the app
-var twilio = require('twilio');
 var http = require('http');
 var mongoose = require('mongoose');
 const PORT = process.env.PORT || 3000;
 const INDEX = __dirname + '/index.html';
 const path = require('path');
 const webpack = require('webpack');
-const webpackMiddleware = require('webpack-dev-middleware');
-const webpackHotMiddleware  = require('webpack-hot-middleware');
 const webpackconfig = require('./webpack.config.js');
 const bodyParser = require('body-parser');
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const app = express();
 // Routes
-let smsRoute = require('./server/controllers/router');
 
 
 
@@ -24,7 +20,7 @@ var userController = require('./server/controllers/user-controller.js');
 
 
 
-// CHECK IF THE TRAFFIC IS ON HTTP or convert to HTTP
+// CHECK IF THE TRAFFIC IS ON HTTPS or convert to HTTP
 app.use(function(req, res, next){
   if(req.headers['x-forwarded-proto'] === 'https'){
     res.redirect('http://' + req.hostname + req.url);
@@ -64,7 +60,6 @@ app.get('*', function response(req, res) {
 *   @see smsRoute and 'controller/router'
 *   @return response as text
 */
-app.use(smsRoute);
 
 
 
