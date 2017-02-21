@@ -24,7 +24,7 @@ input[type=search], input[type=submit]
   height: 40px;
   display: flex;
   align-items: center !important;
-  padding: 0
+  padding: 0;
 }
 // .nav-search
 // {
@@ -37,104 +37,15 @@ input[type=search], input[type=submit]
   font-family:'bitter';
 }
 
-.top-bar
-{
-  background-color: #681728;
-  box-shadow: 0px 1px 4px 0px rgba(0,0,0,.6);
-}
+
 //Part 2 It works here
 
-.top-bar ul
-{
-  background-color: transparent !important;
-	margin: 0px;
-}
+
 
 .row
 {
   display: flex;
   align-items: center;
   justify-content: center;
-
-}
-
-// .top-bar .top-bar-left, .top-bar .top-bar-right {
-// 	width: 100%;
-// }
-
-.menu
-{
-  float: left;
-  width: 100%;
-}
-.app-name, .eachLink
-{
-  float: left;
-  height: 55px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-}
-
-
-.weather-location
-{
-  font-size: 30px;
-  text-transform:uppercase;
-}
-.weather-icon
-{
-  height: 70px;
-  display: flex;;
-  justify-content: center;
-  align-items: center;
-}
-.weather-image
-{
-  height: 60px;
-  width: 60px;
-}
-.weather-item, .weather-parameters
-{
-  float: left;
-  width: 50%;
-
-}
-.weather-eachItem, .weather-eachParameters
-{
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 1em;
-}
-
-// .navbar li {
-//   margin: 0 0.5em;
-// }
-
-.message-chat-list {
-  display: flex;
-  flex-direction: column;
-  margin: 1em auto;
-}
-
-.message-chat {
-  padding: 0.5em;
-  border-bottom: 1px solid #ccc;
-}
-
-.row {
-
-}
-
-.font-main {
-
+  text-align: center;
 }

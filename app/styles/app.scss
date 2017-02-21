@@ -14,13 +14,12 @@
 @import "components/misc";
 
 body{
-  background-color: #F2e1ad;
+  background-color: #f8f1e5;
 }
 .app {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
-
     border: 1px solid #ccc;
     border-radius: 4px;
     z-index: 0;
@@ -29,21 +28,6 @@ body{
 h1, h3 {
     text-align: center;
     margin: 0 0 20px 0;
-}
-
-.modal {
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    margin: -70px 0 0 -120px;
-
-    border: 1px solid #ccc;
-    background: white;
 }
 
 button {
@@ -63,58 +47,9 @@ button {
 }
 
 
-/* Animation */
 
-.modal-anim-enter {
-    opacity: 0.00;
-    transform: scale(0.7);
-    transition: all 0.2s;
-}
-
-.modal-anim-enter.modal-anim-enter-active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.modal-anim-leave {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.2s;
-}
-
-.modal-anim-leave.modal-anim-leave-active {
-    opacity: 0.00;
-    transform: scale(0.7);
-}
-
-.challenge {
-  height: 770px;
-  width: 654px;
-  display: block;
-  text-align: middle;
-}
 
 .font, .page-title
 {
   font-family:'bitter';
-}
-
-.numberCircle {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 8px;
-    background: #fff;
-    border: 2px solid #666;
-    color: #666;
-    text-align: center;
-    font: 32px Arial, sans-serif;
-}
- .createdby {
-   font-size: 24px;
-   font-weight: 800;
- }
-
-.loginmessage {
-  margin: 30px;
 }

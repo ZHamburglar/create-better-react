@@ -13,10 +13,10 @@ var Nav = React.createClass({
         <nav className="top-bar" role="navigation">
             <ul className="small-block-grid-4" data-dropdown-menu>
               <li>
-                <Link to="/main" className="eachLink" activeClassName="active" activeStyle={{fontWeight:'bold',color:'red'}}>HOME</Link>
+                <Link to="/main" className="eachLink" activeClassName="active">HOME</Link>
               </li>
               <li>
-                <Link to="/about" className="eachLink" activeClassName="active" activeStyle={{fontWeight:'bold',color:'red'}}>ABOUT</Link>
+                <Link to="/about" className="eachLink" activeClassName="active">ABOUT</Link>
               </li>
   					</ul>
         </nav>
