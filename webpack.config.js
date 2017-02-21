@@ -53,17 +53,11 @@ module.exports = {
     alias: {
       Main: 'app/components/Main.jsx',
       About: 'app/components/About.jsx',
-      App: 'app/components/ChatBox/App.js',
-      Message: 'app/components/ChatBox/Message.js',
-      Messages: 'app/components/ChatBox/Messages.js',
       Nav: 'app/components/Nav.jsx',
       Footer: 'app/components/Footer.jsx',
-      Challenge: 'app/components/Challenge.jsx',
       applicationStyles: 'app/styles/app.scss',
-			actions: 'app/actions/actions.jsx',
 			reducers: 'app/reducers/reducers.jsx',
-			configureStore: 'app/store/configureStore.jsx',
-      Result: 'app/components/Result.jsx'
+			configureStore: 'app/store/configureStore.jsx'
         },
     extensions: ['', '.js', '.jsx']
   },
