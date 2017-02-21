@@ -9,7 +9,7 @@ import router from 'app/router/';
 class Main extends Component {
   render(){
     return (
-      <div className="font main">
+      <div className="font-main">
         <Nav/>
         <div className="page-actions"></div>
         <div className="row" id="logorow">
@@ -17,7 +17,8 @@ class Main extends Component {
             Left Side
           </div>
           <div className="columns medium-6  large-8 small-centered">
-            Welcome to Your React App
+            <p>Welcome to Your React App!</p>
+            <p>This is the first page!</p>
           </div>
           <div className="columns medium-3 large-2 small-centered">
             Right Side
