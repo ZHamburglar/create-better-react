@@ -16,14 +16,14 @@ class Challenge extends Component{
         <div className="page-actions"></div>
         <div className="row" id="logorow">
           <div className="columns medium-3 large-2 small-centered">
-            Side 1
+            Left Side
           </div>
           <div className="columns medium-6  large-8 small-centered">
             <p>This is the second page!</p>
             <p>Look at you navigating!</p>
           </div>
           <div className="columns medium-3 large-2 small-centered">
-            Side 2
+            Right Side
           </div>
         </div>
         <Footer />

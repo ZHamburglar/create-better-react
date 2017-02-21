@@ -5,14 +5,9 @@ import Footer from 'Footer';
 import * as Redux from 'react-redux';
 import * as actions from 'actions';
 import router from 'app/router/';
-import ChatRoom from './ChatBox/ChatRoom';
 
 class Main extends Component {
-
-
   render(){
-
-
     return (
       <div className="font main">
         <Nav/>
