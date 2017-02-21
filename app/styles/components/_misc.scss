@@ -1,49 +1,8 @@
-.page-title
-{
-  color:$page-title-color;
-  margin-top: $space-30;
-  margin-bottom: $space-30;
+.font, .page-title {
+  font-family: 'Quicksand', sans-serif;
 }
 
-input[type=search], input[type=submit]
-{
-  box-shadow: none;
-  border-radius: 5px;
-  outline:none
-
-}
-//part 3 works here
-.quiz {
-  border-width:thin;
-}
-
-.button-form{
-  border-radius: 5px;
-  outline: none;
-  font-size: 22px;
-  height: 40px;
-  display: flex;
-  align-items: center !important;
-  padding: 0;
-}
-// .nav-search
-// {
-//   max-width: 300px !important;
-//   width: 300px
-// }
-
-.font, .page-title
-{
-  font-family:'bitter';
-}
-
-
-//Part 2 It works here
-
-
-
-.row
-{
+.row {
   display: flex;
   align-items: center;
   justify-content: center;

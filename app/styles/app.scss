@@ -9,12 +9,11 @@
 @import "components/footer";
 @import "components/misc";
 @import "components/navbar";
-@import "components/challenge";
-@import "components/misc";
 
-body{
+body {
   background-color: #f8f1e5;
 }
+
 .app {
     width: 300px;
     margin: 0 auto;
@@ -27,9 +26,4 @@ body{
 h1, h3 {
     text-align: center;
     margin: 0 0 20px 0;
-}
-
-.font, .page-title
-{
-  font-family:'bitter';
 }

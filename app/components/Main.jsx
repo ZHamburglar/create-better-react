@@ -16,7 +16,7 @@ class Main extends Component {
             Left Side
           </div>
           <div className="columns medium-6  large-8 small-centered">
-            <p>Welcome to Your React App!</p>
+            <h3>Welcome to Your React App!</h3>
             <p>This is the first page!</p>
           </div>
           <div className="columns medium-3 large-2 small-centered">

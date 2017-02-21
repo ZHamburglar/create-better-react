@@ -1,11 +1,11 @@
-var React = require('react');
+import React, { Component } from 'react';
 /*how the routes are defined, using inde link show the main link selected only when it is required*/
 var {Link, IndexLink} = require('react-router');
 
 import * as Redux from 'react-redux';
 import router from 'app/router/';
 
-var Nav = React.createClass({
+class Nav extends Component{
   render() {
     return(
       <div>
@@ -22,7 +22,6 @@ var Nav = React.createClass({
 		</div>
     );
   }
-  });
+};
 
-module.exports = Nav;
-// export default Redux.connect()(Nav);
+export default Nav;
