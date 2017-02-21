@@ -1,7 +1,6 @@
 const express = require('express');
 //create the app
 var http = require('http');
-var mongoose = require('mongoose');
 const PORT = process.env.PORT || 3000;
 const INDEX = __dirname + '/index.html';
 const path = require('path');
@@ -54,15 +53,3 @@ app.get('*', function response(req, res) {
     res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
     res.end();
 });
-/*
-*   @summary calling 'api/sms-promotion'
-*   @request POST
-*   @see smsRoute and 'controller/router'
-*   @return response as text
-*/
-
-
-
-
-//User Create
-app.post('/signup', userController.signup);
