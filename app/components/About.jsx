@@ -3,7 +3,6 @@ var {Link} = require('react-router');
 import Nav from 'Nav';
 import Footer from 'Footer';
 import * as Redux from 'react-redux';
-import * as actions from 'actions';
 import router from 'app/router/';
 
 class About extends Component{

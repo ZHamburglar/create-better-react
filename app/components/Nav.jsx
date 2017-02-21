@@ -3,7 +3,6 @@ var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
 import * as Redux from 'react-redux';
-import * as actions from 'actions';
 import router from 'app/router/';
 
 var Nav = React.createClass({

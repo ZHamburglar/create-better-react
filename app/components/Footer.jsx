@@ -1,7 +1,7 @@
-var React = require('react');
+import React, { Component } from 'react';
 /*how the routes are defined, using inde link show the main link selected only when it is required*/
-var Footer = React.createClass({
-  render : function(){
+class Footer extends Component {
+  render(){
     return (
       <footer className="challenge-footer">
       <div className="font main">
@@ -10,8 +10,8 @@ var Footer = React.createClass({
         </h6>
       </div>
       </footer>
-    );
+    )
   }
-});
+};
 
-module.exports = Footer;
+export default Footer;

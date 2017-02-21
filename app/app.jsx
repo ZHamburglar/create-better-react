@@ -7,7 +7,6 @@ var Main = require('Main');
 var About = require('About');
 
 
-var actions = require('actions');
 var store = require('configureStore').configure();
 import router from 'app/router/';
 
